@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Calculator.css" />
+  <title>PulseFit Gym</title>
+  <script src="https://kit.fontawesome.com/49ee3908f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <div class="container header">
+    <a href="index.html"><h1 class="logo">PulseFit</h1></a>
+    <nav>
+      <a href="Calculator.html">Calculator</a>
+      <a href="Workout.html">Programs</a>
+      <a href="Contacts.html">Contact</a>
+      <a href="Timer.html">Timer</a>
+    </nav>
+  </div>
+</header>
+<main class="container1">
+  <h2>1RM (One Rep Max) Calculator</h2>
+  <form id="calculator-form">
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" required />
+
+    <label for="reps">Reps:</label>
+    <input type="number" id="reps" required />
+
+    <button type="submit">Calculate</button>
+  </form>
+  <div id="result"></div>
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 PulseFit Gym. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const header = document.querySelector("header");
+
+  toggle.addEventListener("click", () => {
+    header.classList.toggle("menu-open");
+  });
+</script>
+<script src="Calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Workout.css" />
+  <title>PulseFit Gym</title>
+  <script src="https://kit.fontawesome.com/49ee3908f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+  </div>
+  <div class="container header">
+    <a href="index.html"><h1 class="logo">PulseFit</h1></a>
+    <nav>
+      <a href="Calculator.html">Calculator</a>
+      <a href="Workout.html">Programs</a>
+      <a href="Contacts.html">Contact</a>
+      <a href="Timer.html">Timer</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="content">
+    <div class="exercise">
+      <p>Back</p>
+      <a href="#back">
+        <img src="images/Back.png" alt="Back">
+      </a>
+    </div>
+    <div class="exercise">
+      <p>Chest</p>
+      <a href="#chest">
+        <img src="images/Chest.png" alt="Chest">
+      </a>
+    </div>
+    <div class="exercise">
+      <p>Leg</p>
+      <a href="#leg">
+        <img src="images/Leg.png" alt="Leg">
+      </a>
+    </div>
+    <div class="exercise">
+      <p>Shoulders</p>
+      <a href="#shoulders">
+        <img src="images/Shoulders.png" alt="Shoulder">
+      </a>
+    </div>
+    <div class="exercise">
+      <p>Biceps</p>
+      <a href="#biceps">
+        <img src="images/Biceps.png" alt="Biceps">
+      </a>
+    </div>
+    <div class="exercise">
+      <p>Triceps</p>
+      <a href="#triceps">
+        <img src="images/Triceps.png" alt="Triceps">
+      </a>
+    </div>
+  </div>
+
+  <h2 style="text-align:center; margin-top:80px;">Exercises</h2>
+
+  <section id="back" class="muscle-group">
+    <h3>Back</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Pull-ups', 'Pull-ups develop upper back and lats.')">
+        <img src="images/pullup.jpeg" alt="Pull-ups">
+        <p>Pull-ups</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Deadlifts', 'Deadlifts strengthen the entire back and core.')">
+        <img src="images/deadlifts.jpeg" alt="Deadlifts">
+        <p>Deadlifts</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Bent-over Row', 'Targets mid-back and lats.')">
+        <img src="images/bentover.jpeg" alt="Bent-over Row">
+        <p>Bent-over Row</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="chest" class="muscle-group">
+    <h3>Chest</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Bench Press', 'Classic chest strength exercise.')">
+        <img src="images/benchpress.jpeg" alt="Bench Press">
+        <p>Bench Press</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Push-ups', 'Bodyweight chest movement.')">
+        <img src="images/pushups.jpeg"" alt="Push-ups">
+        <p>Push-ups</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Chest Fly', 'Isolates the pectoral muscles.')">
+        <img src="images/chestfly.jpeg" alt="Chest Fly">
+        <p>Chest Fly</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="leg" class="muscle-group">
+    <h3>Leg</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Squats', 'Compound movement for quads and glutes.')">
+        <img src="images/squats.jpeg" alt="Squats">
+        <p>Squats</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Lunges', 'Strengthens quads and hamstrings.')">
+        <img src="images/lunges.jpeg" alt="Lunges">
+        <p>Lunges</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Leg Press', 'Machine-based leg strength.')">
+        <img src="images/legpress.jpeg" alt="Leg Press">
+        <p>Leg Press</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shoulders" class="muscle-group">
+    <h3>Shoulders</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Overhead Press', 'Builds shoulder mass and power.')">
+        <img src="images/overheadpress.jpeg" alt="Overhead Press">
+        <p>Overhead Press</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Lateral Raises', 'Targets medial deltoids.')">
+        <img src="images/lateralraises.jpeg" alt="Lateral Raises">
+        <p>Lateral Raises</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Front Raises', 'Works front delts.')">
+        <img src="images/frontraises.jpeg" alt="Front Raises">
+        <p>Front Raises</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="biceps" class="muscle-group">
+    <h3>Biceps</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Barbell Curls', 'Basic biceps mass builder.')">
+        <img src="images/barbellcurls.jpeg" alt="Barbell Curls">
+        <p>Barbell Curls</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Hammer Curls', 'Targets outer biceps.')">
+        <img src="images/hammercurls.jpeg" alt="Hammer Curls">
+        <p>Hammer Curls</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Concentration Curls', 'Isolation movement.')">
+        <img src="images/concentrationcurls.jpeg" alt="Concentration Curls">
+        <p>Concentration Curls</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="triceps" class="muscle-group">
+    <h3>Triceps</h3>
+    <div class="divider"></div>
+    <div class="exercise-row">
+      <div class="exercise-card" onclick="showModal('Triceps Dips', 'Bodyweight triceps exercise.')">
+        <img src="images/triceptsdips.jpeg" alt="Triceps Dips">
+        <p>Triceps Dips</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Overhead Extension', 'Hits long head of triceps.')">
+        <img src="images/overheadextensions.jpeg" alt="Overhead Extension">
+        <p>Overhead Extension</p>
+      </div>
+      <div class="exercise-card" onclick="showModal('Pushdowns', 'Cable exercise for triceps.')">
+        <img src="images/pushdowns.jpeg" alt="Pushdowns">
+        <p>Pushdowns</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal and backdrop -->
+  <div id="backdrop" class="modal-backdrop"></div>
+  <div id="exerciseModal" class="exercise-modal">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <button onclick="closeModal()">Close</button>
+  </div>
+
+</main>
+<footer>
+  <div class="container">
+    <p>&copy; 2025 PulseFit Gym. All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  const toggle = document.getElementById("menu-toggle");
+  const header = document.querySelector("header");
+
+  toggle.addEventListener("click", () => {
+    header.classList.toggle("menu-open");
+  });
+</script>
+<script>
+function showModal(title, desc) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalDesc').innerText = desc;
+  document.getElementById('exerciseModal').style.display = 'block';
+  document.getElementById('backdrop').style.display = 'block';
+}
+
+function closeModal() {
+  document.getElementById('exerciseModal').style.display = 'none';
+  document.getElementById('backdrop').style.display = 'none';
+}
+
+document.getElementById('backdrop').addEventListener('click', closeModal);
+</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css" />
+    <title>PulseFit Gym</title>
+    <script src="https://kit.fontawesome.com/49ee3908f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="container header">
+            <a href="index.html"><h1 class="logo">PulseFit</h1></a>
+            <nav>
+                <a href="Calculator.html">Calculator</a>
+                <a href="Workout.html">Programs</a>
+                <a href="Contacts.html">Contact</a>
+                <a href="Timer.html">Timer</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container1">
+            <h2>Unlock Your Potential</h2>
+            <p>Join PulseFit today and take the first step toward a stronger, healthier you.</p>
+            <span class="fa-solid fa-arrow-down" id="arrow"></span>
+        </div>
+    </section>
+
+    <section class="features container">
+        <div class="feature">
+            <i class="fa-solid fa-dumbbell"></i>
+            <h3>Custom Workouts</h3>
+            <p>Programs tailored to your body, your goals, and your schedule.</p>
+            <a href="Workout.html"><div class="btn">Learn More</div></a>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Rest Timer</h3>
+            <p>Track the time between your intervals during your workout</p>
+            <a href="timer.html"><div class="btn">Learn More</div></a>
+        </div>
+        <div class="feature">
+            <i class="fa-solid fa-calculator"></i>
+            <h3>Bench Press Calculator</h3>
+            <p>Test yourself and find your maximum weight in bench calculator</p>
+            <a href="Calculator.html"><div class="btn">Learn More</div></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PulseFit Gym. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.getElementById("menu-toggle");
+        const header = document.querySelector("header");
+
+        toggle.addEventListener("click", () => {
+            header.classList.toggle("menu-open");
+        });
+    </script>
+</body>
+</html>

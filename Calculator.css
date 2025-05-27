@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    top: 50%;
+}
+
+.header {
+    background-color: #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container1 {
+    margin: 5%;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00e676;
+}
+
+.header nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.header nav a:hover {
+    color: #00e676;
+}
+
+footer {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #444;
+    color: #888;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    z-index: 3;
+}
+
+main.container1 {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    width: 50%;
+    margin: 60px auto;
+}
+
+main h2 {
+    color: #00e676;
+}
+
+#calculator-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#calculator-form label {
+    font-weight: bold;
+}
+
+#calculator-form input {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#calculator-form button {
+    padding: 20px 20px;
+    background-color: #00e676;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+#calculator-form button:hover {
+    background-color: #00c765;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #00e676;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    header.menu-open::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2px);
+        z-index: 1;
+    }
+
+    header.menu-open nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        background-color: black;
+        backdrop-filter: blur(2px);
+        z-index: 2;
+        gap: 40px;
+    }
+
+    header.menu-open nav a {
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 10px;
+        transition: color 0.3s ease;
+        margin-right: 25px;
+        bottom: 100px;
+    }
+
+    header.menu-open nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: auto;
+        width: 0;
+        height: 3px;
+        background-color: #00e676;
+        border-radius: 2px;
+        transition: width 0.3s ease;
+    }
+
+    header.menu-open nav a:hover::after {
+        width: 100%;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    header.menu-open .header nav {
+        display: flex;
+    }
+}
